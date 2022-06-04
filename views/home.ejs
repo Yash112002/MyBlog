@@ -1,0 +1,70 @@
+<%- include("partials/header"); -%>
+<div class="container">
+    <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+            <a class="p-2 text-muted" href="/soon">World</a>
+            <a class="p-2 text-muted" href="/soon">India</a>
+            <a class="p-2 text-muted" href="/soon">Technology</a>
+            <a class="p-2 text-muted" href="/soon">Design</a>
+            <a class="p-2 text-muted" href="/soon">Culture</a>
+            <a class="p-2 text-muted" href="/soon">Business</a>
+            <a class="p-2 text-muted" href="/soon">Politics</a>
+            <a class="p-2 text-muted" href="/soon">Opinion</a>
+            <a class="p-2 text-muted" href="/soon">Science</a>
+            <a class="p-2 text-muted" href="/soon">Health</a>
+            <a class="p-2 text-muted" href="/soon">Style</a>
+            <a class="p-2 text-muted" href="/soon">Travel</a>
+        </nav>
+    </div>
+    <div class="jumbotron">
+        <h1 class="display-4">Namaste, Welcome to my blogs...</h1>
+        <p class="lead">You can read my latest blogs here...</p>
+        <hr class="my-4">
+        <p>
+            U can have a look here on my blogs from starting to till today. I regularly posts blogs here. Blogs which
+            are based on technologies, environment, movies, reviews, my opinions, etcs. Feel free to give your time
+            here.
+        </p>
+        <!-- <a class="btn btn-primary btn-lg" href="/about" role="button">About Me</a> -->
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div id="start" class="col-sm-8 mb-5">
+            <div class="top">
+                <h1 id="startOverHere">Start Over here...</h1>
+                <hr>
+                <p><%=homeStartingContent%></p>
+            </div>
+            <%   posts.forEach(element => { %>
+            <div class="post">
+                <h4 id="<%=element.title%>"><%=element.title%></h4>
+                <p style="font-size: 0.8rem;" class="lead"><%= element.date %> </p>
+                <p><%=element.content.substring(0, 180)%> <a href="/blogs/<%=element.title%>">Read more...</a></p>
+            </div>
+            <%});%>
+        </div>
+        <div class=" sidebar col-sm-4 mb-5">
+            <h1 id="events">Events</h1>
+            <hr>
+            <%   posts.forEach(element => { %>
+            <div class="post">
+                <a href="#<%=element.title%>" class="text-decoration-none"><%=element.title%><span
+                        class="badge badge-primary mx-2">New</span></a><br>
+                <hr>
+            </div>
+            <%});%>
+            <a href="/stories" class="text-decoration-none"><button type="button"
+                    class="btn btn-primary btn-lg btn-block">Stories</button></a>
+            <div class="p-3 mt-3 mb-5 bg-light rounded">
+                <h4 class="font-italic">My Favourite</h4>
+                <p>
+                    Visiting <em>"Taj Mahal"</em> is my Favourite part. It's beauty is immortal. It was raining that day. During rain, it shines brilliantly. Weather wo also very chilly that day.
+                </p>
+                <img class="my-3" src="img/side2.jpeg" alt="error" width="100%">
+            </div>
+        </div>
+    </div>
+</div>
+<%- include("partials/footer"); -%>
