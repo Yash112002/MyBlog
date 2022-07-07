@@ -49,6 +49,8 @@ Sections :
     3. Blog section 
     4. Stories (pages coming soon)
     5. My favourite
+    6. Events
+    7. Footer
     
 
 
