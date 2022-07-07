@@ -1,4 +1,49 @@
 # MyBlog
-MyBlog : It is a website based on Node.js, MongoDB, NoSQL, Express.js and Ejs. It performs all CRUD operations.
-Additional Functionalities : Multiple node modules like lodash, mongoose, body-parser.
+
+
+Link to preject :
+
+
 https://evening-scrubland-59458.herokuapp.com/
+
+
+Objective : The objective of this project is to create a blog website. 
+
+
+Technologies Used : 
+
+
+    1. HTML
+    2. JavaScript
+    3. Bootstrap
+    4. Exchange Rate Api (https://exchangeratesapi.io/) 
+
+
+Fucntionalities Used : 
+
+
+    1. HTML
+    2. JavaScript
+    3. Bootstrap
+    4. Exchange Rate Api (https://exchangeratesapi.io/)  
+
+
+Sections : 
+
+
+    1. HTML
+    2. JavaScript
+    3. Bootstrap
+    4. Exchange Rate Api (https://exchangeratesapi.io/) 
+
+
+Additional Used : 
+
+
+    1. HTML
+    2. JavaScript
+    3. Bootstrap
+    4. Exchange Rate Api (https://exchangeratesapi.io/) 
+    
+    
+
